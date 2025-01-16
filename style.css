@@ -189,7 +189,7 @@ body {
 
 .content .form-group select{
     width: 100%;
-    height: 3rem;
+    height: 5rem;
     padding: 1rem;
     margin-top: 1rem;
     border-radius: 0.5rem;
@@ -367,30 +367,63 @@ body {
 
 /*commentaar*/
 
-.comments-section {
-    width: 100%;
-    margin-top: 2rem;
+.comment {
+    display: flex;
+    width: 66%;
+    margin-top: 1rem;
+    margin-left: 4.5rem;
     padding: 2rem;
-    border: rgba(0, 0, 0, 0.1) 1px solid;
+    border: rgba(0, 0, 0, 0.9) 1px solid;
+    border-color: rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    
 }
 
-.comments-section h2, .comments-section h3 {
-    margin-bottom: 1.5rem;
-    color: #333;
+
+
+.comments-section {
+    width: 100%;
+    margin: 0 auto; 
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    
+    
 }
+
+.comment-left{
+    display: flex;
+    flex: 30%;
+    
+    margin: 0 auto;
+}
+
+.comment-right{
+    display: flex;
+    flex: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
 
 .comment-form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 100%;
+    justify-content: flex-start;
+    
 }
 
-.comment-form label {
+.comment-form p {
+    font-size: 2rem;
     font-weight: bold;
-    color: #555;
+    
 }
 
 .comment-form input, .comment-form textarea {
@@ -398,12 +431,13 @@ body {
     padding: 1rem;
     border-radius: 0.5rem;
     border: rgba(0, 0, 0, 0.1) 1px solid;
-    font-size: 1.3rem;
+    
     color: rgba(0, 0, 0, 0.5);
 }
 
 .comment-form textarea {
     resize: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 .comment-form .submit-btn {
@@ -424,6 +458,9 @@ body {
 
 .comments-display {
     margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 .comments-display .comment {
@@ -441,13 +478,167 @@ body {
 }
 
 
+/* Admin */
+.admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container {
+    width: 300px;
+    background: white;
+    margin-top: 23rem;
+    padding: 20px;
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 28rem;
+    
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    background-color: #e74c3c;
+    color: white;
+    border : none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #c0392b;
+}
+
+.login-container .forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.login-container .forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+/* Admin wejzigingen */
+
+
+.admin-container {
+    width: 90%;
+    padding-top: 20rem ;
+    margin-left: 3rem;
+    justify-content: center;
+    align-items: center;
+    
+}
 
 
 
+.add-film-btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
+.add-film-btn:hover {
+    background-color: #218838;
+}
 
+/* Tablo Stilleri */
+.film-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    padding: 2rem;
+    border: rgba(0, 0, 0, 0.1) 1px solid;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
+.film-table th, .film-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
 
+.film-table th {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+}
+
+.film-table td {
+    vertical-align: top;
+}
+
+/* Film Poster */
+.film-poster {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Düzenle ve Sil Butonları */
+.edit-btn, .delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
 
 
 
