@@ -159,9 +159,9 @@ body {
 
 .content .movies a {
     cursor: pointer;
-    font-weight: bold;
-    font-size: 1.4rem;
-    color: rgba(0, 0, 0, 0.8);
+    
+    
+    color: #2c3e50;
     text-decoration: none; 
 }
 
@@ -518,7 +518,7 @@ body {
     color: #555;
 }
 
-.login-container input {
+.login-container input, textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -656,7 +656,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 3rem;
-    padding-top: 16rem;
+    padding-top: 18rem;
     
     border: rgba(0, 0, 0, 0.1) 1px solid;
     border-radius: 0.5rem;
@@ -756,14 +756,24 @@ body {
     }
 
     .nav-links {
+        display: flex;
+
+        width: 100%;
+        flex: 100%;
+        margin: 0 auto;
         flex-direction: row; 
         gap: 1rem; 
-        width: 100%;
-        padding: 0;
-        margin: 1rem 0;
+        justify-content: space-around;
+        
     }
 
     .nav-links li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex: 100%;
+        margin: 0 auto;
         text-align: center;
         font-size: 1.6rem;
         padding: 1rem;
@@ -775,10 +785,37 @@ body {
         background-color: #2c3e50; 
     }
 
-    .login-btn {
-        width: 100%; 
-        font-size: 1.4rem; 
-        margin-top: 1rem; 
+    .navbar button{
+        display: flex;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        background-color: #e74c3c;
+        color: white;
+        border : none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .navbar a{
+        width: 100%;
+    }
+
+
+
+    .nav-links .login-btn {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    flex: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    margin-top: 2rem;
     }
 
     /* Content */
@@ -790,6 +827,8 @@ body {
         justify-content: center;
         padding: 1rem;
         padding-top: 12em;
+        flex: 100%;
+        width: 100%;
     }
 
     .content .right-column {
@@ -800,6 +839,7 @@ body {
 
     .content .left-column {
         flex: 100%;
+        width: 100%;
         padding: 1rem;
         margin: 0;
         
@@ -878,8 +918,14 @@ body {
         width: 65%;
     }
 
+    .comment{
+        width: 100%;
+        margin-left: 0;
+    }
+
     .comments-section {
         width: 100%;
+        flex: 100%;
         flex-direction: column;
         gap: 1rem;
     }
@@ -889,14 +935,27 @@ body {
         
     }
 
-    .comment-form {
+    .comment-form p{
+        display: inline-block;
+    }
+
+    .comment-left form {
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
         width: 100%;
+        flex: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .comments-display .comment {
         flex-direction: row;
         align-items: flex-start;
     }
+
+    
 
     /* Admin */
 
@@ -914,11 +973,13 @@ body {
     .footer {
         margin: 0;
         padding: 1rem; 
-        width: auto;
+        
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
+        flex: 100%;
+        width: 100%;
         
         
     }
