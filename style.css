@@ -61,6 +61,7 @@ body {
 }
 
 .nav-links li a {
+
     text-decoration: none;
     font-size: 1.8rem;
     color: #ecf0f1;
@@ -149,8 +150,9 @@ body {
     font-weight: bold;
 }
 
-.content .summary a {
+.content .movies a {
     cursor: pointer;
+    font-weight: bold;
     font-size: 1.4rem;
     color: rgba(0, 0, 0, 0.8);
     text-decoration: none; 
@@ -641,6 +643,43 @@ body {
 }
 
 
+/* About */
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem;
+    padding-top: 16rem;
+    
+    border: rgba(0, 0, 0, 0.1) 1px solid;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.about-content h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.about-content h2 {
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+.about-content p {
+    margin: 1rem 0;
+}
+
+.about-content ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.about-content ul li {
+    margin-bottom: 0.5rem;
+}
 
 
 
