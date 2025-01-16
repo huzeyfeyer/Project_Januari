@@ -6,6 +6,243 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <img src="image/logo.png" alt=""> 
+        <span>Movieclub.be</span>
+        
+    </div>
+
+    
+    <ul class="nav-links">
+        <li><a href="homepage.html">Homepage</a></li>
+        <li><a href="homepage.html">Films</a></li>
+        <li><a href="acteurinformatie.html">Acteurs</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    <a href="admin.html">
+    <button class="login-btn">Login</button>
+    </a>
+
+</nav>
+
+
+
+<section class="content">
+
+    <div class="left-column">
+        <h2>Alle Acteurs</h2>
+
+        <div class="movies">
+
+            <div class="thumbnail" id="acteur-img">
+                <img src="image/morgan-freeman.jpg" alt="Image">
+
+            </div>
+
+            <div class="details">
+                
+                <div class="name">
+                    <span class="label-title">Naam: </span>
+                    <span class="label">Morgan Freeman</span>
+
+                </div>
+                <div class="genre">
+                    <span class="label-title">Land: </span>
+                    <span class="label">ABD </span>
+
+                </div>
+                <div class="others">
+                    <span class="label-title">Geboortejaar: </span>
+                    <span class="label">1937</span>
+
+                </div>
+                <div class="summary">
+                    <span class="label-title">Biografie: </span>
+                    <span class="label">With an authoritative voice and calm demeanor, this ever popular American actor has grown into one of the most respected figures in modern US cinema. Morgan was born on June 1, 1937 in Memphis, Tennessee, to Mayme Edna (Revere), a teacher, and Morgan Porterfield Freeman, a barber. The young Freeman attended Los Angeles City College before serving several years in the US Air Force as a mechanic between 1955 and 1959.</span>
+
+                    
+
+                </div>
+                <a href="the-shawshank.html">Kijk naar</a>
+                
+
+            </div>
+
+            
+
+            <div class="right-top">
+                <span class="material-icons">star_border</span>
+                
+            </div>
+        </div>
+
+        <div class="movies">
+
+            <div class="thumbnail" id="acteur-img">
+                <img src="image/christian-bale.jpg" alt="Image">
+
+            </div>
+
+            <div class="details">
+                
+                <div class="name">
+                    <span class="label-title">Naam: </span>
+                    <span class="label">Christian Bale</span>
+
+                </div>
+                <div class="genre">
+                    <span class="label-title">Land: </span>
+                    <span class="label">England </span>
+
+                </div>
+                <div class="others">
+                    <span class="label-title">Gebortejaar: </span>
+                    <span class="label">1974</span>
+
+                </div>
+                <div class="summary">
+                    <span class="label-title">Biografie: </span>
+                    <span class="label">Christian Charles Philip Bale was born in Pembrokeshire, Wales, UK on January 30, 1974, to English parents Jennifer "Jenny" (James) and David Bale. His mother was a circus performer and his father, who was born in South Africa, was a commercial pilot. The family lived in different countries throughout Bale's childhood, including England, Portugal, and the United States.</span>
+
+                    
+
+                </div>
+
+                <a href="the-dark-night.html">Kijk naar</a>
+               
+
+            </div>
+
+            
+
+            <div class="right-top">
+                <span class="material-icons">star_border</span>
+            </div>
+        </div>
+
+        <div class="movies">
+
+            <div class="thumbnail" id="acteur-img">
+                <img src="image/tom-hanks.jpg" alt="Image">
+
+            </div>
+
+            <div class="details">
+                
+                <div class="name">
+                    <span class="label-title">Naam: </span>
+                    <span class="label">Tom Hanks</span>
+
+                </div>
+                <div class="genre">
+                    <span class="label-title">Land: </span>
+                    <span class="label">ABD </span>
+
+                </div>
+                <div class="others">
+                    <span class="label-title">Geboortejaar: </span>
+                    <span class="label">1956</span>
+
+                </div>
+                <div class="summary">
+                    <span class="label-title">Biografie: </span>
+                    <span class="label">Thomas Jeffrey Hanks was born in Concord, California, to Janet Marylyn (Frager), a hospital worker, and Amos Mefford Hanks, an itinerant cook. His mother's family, originally surnamed "Fraga", was entirely Portuguese, while his father was of mostly English ancestry. Tom grew up in what he has called a "fractured" family.<span>
+
+                        
+
+                </div>
+
+                <a href="the-green-mile.html">Kijk naar</a>
+               
+
+            </div>
+
+            
+
+            <div class="right-top">
+                <span class="material-icons">star_border</span>
+            </div>
+        </div>
+
+        
+
+
+    </div>
+
+    <div class="right-column">
+        <div class="form-group">
+            <p>Film/Acteur</p>
+            <select class="form" id="types">
+                <option value="film">Film</option>
+                <option value="acteur">Acteur</option>
+            </select>
+
+            <p>Genre</p>
+            <select class="form" id="genre">
+                <option value="Alle Genre">Alle Categorien</option>
+                <option value="drama">Drama</option>
+                <option value="action">Action</option>
+            </select>
+
+            <p>Productiejaar</p>
+            <select class="form" id="jaar">
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+            </select>
+
+            <a href="homepage.html">
+                <button class="zoek-btn">Zoek</button>
+                </a>
+
+            
+        </div>
+    </div>
+
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="copy">
+    
+    <p>&copy; 2025 Filmwebsite. Alle rechten voorbehouden.</p>
+
+    </div>
+    
+    <div class="logo">
+        <img src="image/logo.png" alt=""> 
+        <p>Movieclub.be</p>
+    </div>
+   
+</footer>
+
+
+    
+</body>
+</html>
     
 </body>
 </html>

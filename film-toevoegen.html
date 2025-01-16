@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="image/logo.png" alt=""> 
+            <span>Movieclub.be</span>
+            
+        </div>
+    
+        
+        <ul class="nav-links">
+            <li><a href="homepage.html">Homepage</a></li>
+            <li><a href="homepage.html">Films</a></li>
+            <li><a href="acteurinformatie.html">Acteurs</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <a href="admin.html">
+        <button class="login-btn">Login</button>
+        </a>
+    
+    </nav>
+
+<div class="admin">
+
+    <div class="login-container">
+        <h2>Film Toevoegen</h2>
+        <form>
+
+            <label for="filmPoster">Upload afbelding</label>
+            <input type="file" id="filmPoster" name="filmPoster" accept="image/*" required>
+            
+
+            <label for="username">Naam</label>
+            <input type="text" id="username" placeholder="Voer de naam in" required>
+
+            <label for="username">Genre</label>
+            <input type="text" id="username" placeholder="Voer de genre in" required>
+
+            <label for="username">Jaar</label>
+            <input type="text" id="username" placeholder="Voer het jaar in" required>
+
+            <label for="username">Beschrijving</label>
+            <input type="text" id="username" placeholder="Voer de beschrijving in" required>
+
+            <a href="admin-login.html">
+                <button type="button">Toevoegen</button>
+            </a>
+            
+        </form>
+    </div>
+
+</div>
+
+    
+
+    <footer class="footer">
+
+        <div class="copy">
+        
+        <p>&copy; 2025 Filmwebsite. Alle rechten voorbehouden.</p>
+    
+        </div>
+        
+        <div class="logo">
+            <img src="image/logo.png" alt=""> 
+            <p>Movieclub.be</p>
+        </div>
+       
+    </footer>
+    
+</body>
+</html>
